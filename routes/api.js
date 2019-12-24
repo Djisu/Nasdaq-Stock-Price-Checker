@@ -59,7 +59,7 @@ module.exports = function (app) {
         if (err){
           res.json({'message': err.toString()})
         } else {
-          res.json({'stock': varStock, 'price': varPrice, 'likes': varLikes})
+          res.json({'stock': data.stock, 'price': data.price, 'likes': data.likes})
         }
       })
 
